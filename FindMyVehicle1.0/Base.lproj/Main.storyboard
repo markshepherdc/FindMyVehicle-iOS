@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6I-tn-7bb">
+                                <animations/>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Jv-7P-OUJ">
+                                <animations/>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5S-wr-oeR">
+                                <animations/>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1l-Uo-y7j">
+                                <rect key="frame" x="205" y="52" width="115" height="58"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=".">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelParkingRequest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="slW-Rk-NgJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clY-lr-ath">
+                                <rect key="frame" x="0.0" y="52" width="73" height="68"/>
+                                <animations/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureParkingLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lYT-O7-ue6"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwc-5a-S3L">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Item" width="70" id="aHe-92-LKR">
+                                        <connections>
+                                            <action selector="showMapView:" destination="vXZ-lx-hvc" id="3VJ-n4-9Ia"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" width="50" id="aVY-0q-sav">
+                                        <connections>
+                                            <action selector="showStreetViewOfVehicle:" destination="vXZ-lx-hvc" id="q7e-OI-uHZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" width="63" id="i1u-yj-CmX">
+                                        <connections>
+                                            <action selector="historyOfParkingSpaces:" destination="vXZ-lx-hvc" id="cLV-ff-Eb9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" width="78" id="STP-iN-dUT">
+                                        <connections>
+                                            <action selector="shareParkingLocation:" destination="vXZ-lx-hvc" id="I0E-aO-pAc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfV-5m-uhx">
+                                <rect key="frame" x="0.0" y="474" width="320" height="50"/>
+                                <animations/>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOU-7G-KFd">
+                                <rect key="frame" x="0.0" y="135" width="66" height="35"/>
+                                <animations/>
+                                <state key="normal" title="Meter"/>
+                                <connections>
+                                    <action selector="activateParkingMeter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ihw-Av-Gu0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyk-I7-n7O">
+                                <rect key="frame" x="0.0" y="209" width="84" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VL-oS-ydR">
+                                <rect key="frame" x="0.0" y="168" width="49" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startStopMeter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ft-gh-rht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW5-IH-KP3">
+                                <rect key="frame" x="0.0" y="256" width="42" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseMeter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iYP-m3-NqE"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3w-Pw-Jrv">
+                                <rect key="frame" x="0.0" y="28" width="320" height="449"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="Qjo-3e-pw5" kind="embed" id="b0p-8Z-7dq"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="adview" destination="OfV-5m-uhx" id="fKq-Aa-mKy"/>
+                        <outlet property="cancelPark" destination="W1l-Uo-y7j" id="VnL-Ju-Zdz"/>
+                        <outlet property="getLocationButton" destination="aHe-92-LKR" id="CEp-Ui-hY8"/>
+                        <outlet property="getStreetViewButton" destination="aVY-0q-sav" id="Fge-tH-ceo"/>
+                        <outlet property="historyButton" destination="i1u-yj-CmX" id="pzB-B0-xaQ"/>
+                        <outlet property="meterPauseButton" destination="lW5-IH-KP3" id="3Jn-1x-Z1h"/>
+                        <outlet property="meterStartButton" destination="4VL-oS-ydR" id="oNx-IM-wfx"/>
+                        <outlet property="parkingButton" destination="clY-lr-ath" id="lJq-WU-CYl"/>
+                        <outlet property="parkingMeterButton" destination="oOU-7G-KFd" id="nDO-ax-h8l"/>
+                        <outlet property="parkingTimerLabel" destination="uyk-I7-n7O" id="UMX-Ic-bru"/>
+                        <outlet property="shareButton" destination="STP-iN-dUT" id="rlH-re-0xb"/>
+                        <outlet property="subMapView" destination="c3w-Pw-Jrv" id="b8a-gu-3r4"/>
+                        <outlet property="toolBar" destination="zwc-5a-S3L" id="Eoz-vx-SEE"/>
+                        <outlet property="view" destination="kh9-bI-dsS" id="N3s-qO-nOh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="434"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QXQ-kb-GHE">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Qjo-3e-pw5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bId-vK-caC"/>
+                        <viewControllerLayoutGuide type="bottom" id="4xY-Ib-5M5"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xLk-JQ-x0l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="449"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUB-M5-CzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
